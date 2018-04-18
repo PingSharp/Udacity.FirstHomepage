@@ -57,3 +57,28 @@ function activchange(a) {
     var element = document.getElementById(a);
     element.className += " " + "gridactive";
 }
+
+function openmenu(id)
+{
+    var dropdown = document.getElementById(id);
+    var dropdownitem = document.getElementById("dropdownitem");
+    var i;
+    if (dropdownitem.style.display == "none") {
+        dropdownitem.style.display = "block";
+        dropdown.style.backgroundColor = "white";
+    }
+    else{
+        dropdownitem.style.display = "none";
+        dropdown.style.backgroundColor = "transparent";
+    }
+}
+function showpic(id)
+{
+               
+    var pic = document.getElementById("showpic");
+    var hoverpic = document.getElementById(id).firstChild;
+    var hoverpicsrc = hoverpic.getAttribute("src");
+  
+    
+    pic.setAttribute("src", hoverpicsrc);
+}

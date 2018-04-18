@@ -1,20 +1,24 @@
-﻿@media (max-width:480px)
+﻿@media screen and  (max-width:480px)
 {
+   
    #side_menu{
-       width:60px;
+       width:11%;
      }
 #main_menu ul li a {
-    width:4em;
+    width:5em;
+    text-align:left;
     
 }
+#main_menu ul li a:before{
+    font-size:32px;
+}
     .main_content{
-       max-width:420px;
-       min-width:260px;
-        position:relative;
-        right:-9%;
+      width:88%;
+        padding-left:1%;
     }
     #section_home{
-        background-image:url(../images/cover_480.jpg);
+        background-image:url(../images/bluebg.jpeg);
+      
       
     }
     #website_header{
@@ -32,8 +36,8 @@
        font-size:1.5em;
     }
     #section-aboutme{
-       
-        height:1300px;
+       height:1450px;
+      
       
     }
     .leftcontent{
@@ -42,7 +46,8 @@
     .rightcontent{
         width:100%;
         overflow:hidden;
-        height:1300px;
+        height:1450px;
+       
     }
     .sectiontitle{
         width:80%;
@@ -62,5 +67,398 @@
     .rowcontent{
         display:block;
     }
+    #section_curriculumVitae{
+        height:2550px;
+    }
+    #section_curriculumVitae .rightcontent{
+        height:2550px;
+    }
+    .row .col-sm-5{
+        padding-top:32%;
+        padding-left:10%;
+    }
+    #section_portfolio{
+        height:1100px;
+    }
+    #section_portfolio .rightcontent{
+        height:1100px;
+        margin-left:10px;
+    }
+    #portfolio{
+        padding-top:60px;
+    }
+    #portfolio-filter{
+        padding-top:100px;
+    }
+    #section_contact{
+        height:1500px;
+    }
+    #section_contact .leftcontent{
+        display:block;
+        overflow:hidden;
+        height:50%;
+        width:100%;
+    }
+    #section_contact .rightcontent{
+        height:50%;
+    }
+    .contact-form{
+        margin-left:10px;
+    }
+    .stamp{
+        margin-right:-10px;
+    }
+    .letterinfo p{
+        margin-left:0px;
+    }
+    #website_footer{
+        width:100%;
+        position:fixed;
+        left:15%;
+        bottom:0px;
+        opacity:0.6;
+    }
+    
+}
 
+@media screen and  (max-width:600px) and (min-width:481px)
+{
+   #side_menu{
+       width:9%;
+   } 
+   #main_menu ul li a:before {
+       font-size: 35px;
+      
+   }
+   #main_menu ul li a{
+       text-align:left;
+   }
+   .main_content{
+       width:91%;
+   }
+   #section_home{
+       background-image:url(../images/cover_480.jpg);
+       background-size:cover;
+   }
+   #pingslogo{
+       display:none;
+   }
+   #section-aboutme{
+       display:block;
+       height:1650px;
+      
+   }
+   .leftcontent{
+       width:100%;
+       height:40%;
+
+   }
+    .rightcontent {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+    }
+   #section_curriculumVitae{
+      
+       height:2760px;
+   }
+   #section_curriculumVitae .rightcontent{
+       order:2;
+       height:80%;
+   }
+   #section_curriculumVitae .leftcontent{
+       order:-2;height:20%;
+   }
+   .row .col-sm-5{
+       padding-left: 20px;
+       padding-top: 135px;
+   }
+   #section_portfolio{
+       height:1400px;
+
+   }
+   #section_contact{
+       height:1200px;
+   }
+   #section_contact .leftcontent{
+       overflow:hidden;
+       height:60%;
+   }
+   #section_contact .rightcontent{
+       height:40%;
+   }
+   #website_footer{
+       height: 160px;
+       top: 78%;
+   }
+   .footer_social{
+       height:100%;
+   }
+   .social{
+       height:100%;
+   }
+   .socialitem{
+       width:4em;
+   }
+   .social li .fontawesome-github:before{
+       font-size:2.2em;
+       padding-left:8px;
+   }
+   .social li .entypo-sina-weibo:before{
+       font-size:2em;
+       padding-left:8px;
+   }
+   .social li .entypo-qq:before{
+       font-size:2em;
+       padding-left:8px;
+   }
+  
+}
+@media screen and (max-width:800px) and (min-width:601px) {
+    #side_menu{
+        width:9%;
+    }
+    #main_menu ul li a:before {
+        font-size: 38px;
+    }
+    #main_menu ul li a {
+        text-align: center;
+        width:4.5em;
+    }
+    #section_home{
+        background-image:url("../images/ping.jpg");
+        background-size:cover;
+    }
+    #pingslogo{
+        position:relative;
+        right:245px;
+    }
+    #section-aboutme{
+        height:1650px;
+    }
+    #section-aboutme .leftcontent{
+        order:2;
+        width:100%;
+        height:49%;
+    }
+    #section-aboutme .rightcontent{
+        order:-1;
+        width:100%;
+        height:51%;
+        overflow:hidden;
+    }
+    #section_curriculumVitae{
+        height:3200px;
+    }
+    #section_curriculumVitae .leftcontent
+    {
+        width:100%;
+        height:30%;
+    }
+    #section_curriculumVitae .rightcontent{
+        width:100%;
+        height:70%;
+        overflow:hidden;
+    }
+    .row .col-sm-5{
+        padding-left: 16px;
+        padding-top: 135px;
+    }
+    #section_portfolio{
+        height:1500px;
+    }
+    #section_portfolio .rightcontent{
+        order:-1;
+        width:100%;
+        height:60%;
+    }
+    
+    #section_portfolio .leftcontent{
+        order:1;
+        width:100%;
+        height:40%;
+    }
+    #section_contact{
+        height:1150px;
+    }
+    #section_contact .leftcontent{
+        width:100%;
+        height:60%;
+        overflow:hidden;
+    }
+    #section_contact .rightcontent{
+        width:100%;
+        height:40%;
+    }
+    #website_footer {
+        height: 160px;
+        top: 78%;
+    }
+
+    .footer_social {
+        height: 100%;
+    }
+
+    .social {
+        height: 100%;
+    }
+
+    .socialitem {
+        width: 4em;
+    }
+
+    .social li .fontawesome-github:before {
+        font-size: 2.3em;
+        padding-left: 16px;
+    }
+
+    .social li .entypo-sina-weibo:before {
+        font-size: 2.1em;
+        padding-left: 16px;
+    }
+
+    .social li .entypo-qq:before {
+        font-size: 2.1em;
+        padding-left: 16px;
+    }
+  
+    
+}
+@media screen and (max-width:1024px) and (min-width:801px)
+{
+    #side_menu{
+        width:8%;
+    }
+    #section_home {
+        background-image: url("../images/ping_1024.jpg");
+        background-size: cover;
+    }
+   .main_content{
+       width:91%;
+   }
+   #pingslogo{
+       position:relative;
+       right:50%;
+   }
+   #section-aboutme{
+       height:800px;
+   }
+   #section-aboutme .leftcontent{
+       width:45%;
+       height:100%;
+   }
+   #section-aboutme .rightcontent{
+       width:55%;
+       height:100%;
+   }
+   #section_curriculumVitae{
+       height:800px;
+
+   }
+   #section_curriculumVitae .leftcontent{
+       width:45%;
+       height:100%;
+   }
+   #section_curriculumVitae .rightcontent{
+       width:55%;
+       height:100%;
+   }
+   #section_portfolio{
+       height:800px;
+   }
+   #section_portfolio .leftcontent{
+       width:45%;
+       height:100%;
+   }
+   #section_portfolio .rightcontent{
+       width:55%;
+       height:100%;
+   }
+   #section_contact{
+       height:800px;
+   }
+   #section_contact .leftcontent{
+       width:55%;
+       height:100%;
+   }
+   #section_contact .rightcontent{
+       width:45%;
+       height:100%;
+   }
+    #website_footer {
+        height: 160px;
+        top: 78%;
+    }
+
+    .footer_social {
+        height: 100%;
+    }
+
+    .social {
+        height: 100%;
+    }
+
+    .socialitem {
+        width: 4.1em;
+    }
+
+    .social li .fontawesome-github:before {
+        font-size: 2.4em;
+        padding-left: 20px;
+    }
+
+    .social li .entypo-sina-weibo:before {
+        font-size: 2.2em;
+        padding-left: 20px;
+    }
+
+    .social li .entypo-qq:before {
+        font-size: 2.2em;
+        padding-left: 20px;
+    }
+  
+}
+@media screen and (min-width:1024px)
+{
+    #side_menu{
+        width:7%;
+    }
+    .main_content{
+        margin-right: 1.5%;
+    }
+    #website_footer {
+        height: 160px;
+        top: 78%;
+    }
+
+    .footer_social {
+        height: 100%;
+    }
+
+    .social {
+        height: 100%;
+    }
+
+    .socialitem {
+        width: 4.2em;
+        display:block;
+    }
+
+    .social li .fontawesome-github:before {
+        font-size: 2.5em;
+        padding-left: 25px;
+        line-height: 1.5em;
+    }
+
+    .social li .entypo-sina-weibo:before {
+        font-size: 2.3em;
+        padding-left: 25px;
+        line-height: 1.5em;
+    }
+
+    .social li .entypo-qq:before {
+        font-size: 2.3em;
+        padding-left: 25px;
+        line-height: 1.5em;
+    }
 }

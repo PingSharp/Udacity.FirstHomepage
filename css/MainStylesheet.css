@@ -89,11 +89,25 @@ h4,h5{
 
 #main_menu ul li a {
         display: block;
-        width: 5em;
+        width: 100%;
         height: 5em;
         text-align:center;
         line-height:5em;
     }
+.dropdown-container{
+    display:none;
+    padding-left:8px;
+    width:auto;
+    position:absolute;
+    top:0px;
+    left:100%;
+    background-color:mediumblue;
+    border-radius:5px;
+}
+.dropdown-container a {
+    color:white;
+    font-size:2.5em;
+}
 #main_menu ul li:first-child a:before {
     opacity: 1;
 }
@@ -163,23 +177,23 @@ h4,h5{
     font-size: 2em;
 }#section-aboutme {
     width: 100%;
-    height: 650px;
+    height: 850px;
     display: flex;
     flex-wrap: wrap;
 }
 .leftcontent{
     width:50%;
-    height:650px;
+    height:100%;
 
 }
 .leftpic{
-    width:100%;
-    height:100%;
+    max-width:100%;
+    max-height:100%;
     
 }
 .rightcontent{
     width:50%;
-    height:650px;
+    height:100%;
     overflow:auto;
 
 }
@@ -234,7 +248,7 @@ h4,h5{
 #section_curriculumVitae {
     
     width: 100%;
-    height: 650px;
+    height: 850px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -281,6 +295,9 @@ h3{
 .col-sm-5 h3:before{
     color:cornflowerblue;
 }
+.row .col-sm-5 {
+  padding-left:0px;
+}
 .h3titleright {
     margin-left:0px;
     margin-bottom:0px;
@@ -322,7 +339,7 @@ h3{
 #section_portfolio {
    
     width: 100%;
-    height: 650px;
+    height: 850px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -376,7 +393,7 @@ h3{
 }
 .grid li{
     float:left;
-    padding:0px;
+    padding-left:10px;
     margin:0px;
     opacity:1;
     list-style-type:none;
@@ -394,8 +411,23 @@ h3{
     display:block;
     height:100%;
 }
+
+.grid > li > figure > a:before{
+    color:blue;
+    border-radius:60px;
+    
+    font-size:30px;
+    position:relative;
+    top:80px;
+    left: 100px;
+    display:none;
+}
+.grid > li > figure > a:hover:before{
+    display:inline-block;
+}
+
 .grid > li > figure >a > img{
-    width:100%;
+    max-width:100%;
     display:block;
     padding:0px;
     margin:0px;
@@ -424,10 +456,13 @@ h3{
 #section_contact{
   
     width:100%;
-    height:650px;
+    height:850px;
     display:flex;
     flex-wrap:wrap;
 }
+    #section_contact .leftcontent {
+        overflow:auto;
+    }
 #map{
     height:100%;
     width:100%;
@@ -464,6 +499,9 @@ h3{
     line-height:120%;
     font-family:cursive;
 }
+    .letterinfo p {
+       margin-left:15px;
+    }
 .contactform{
     width:100%;
     height:340px;
