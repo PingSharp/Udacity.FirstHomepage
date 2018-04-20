@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -10,13 +9,12 @@
     <link href="css\Responsive.css" rel="stylesheet"/>
     <script src="js\PortfolioScript.js" ></script>
 </head>
-<body >
-    <div class="main" style="width:100%; height:auto;">
+<body onload="showrightportfolio()" >
+    <div class="main">
         <div id="side_menu">
             <nav id="main_menu">
                 <ul>
-                    <li><a href="#" id="dropdownmenu" class="menu_item entypo-air" onclick="openmenu(this.id)" title="MENU"></a></li>
-                    
+                    <li><a href="#" id="dropdownmenu" class="menu_item entypo-air" onclick="openmenu(this.id)" title="MENU"></a></li>                    
                     <li><a href="#" class="menu_item entypo-home" title="HOME"></a></li>
                     <li><a href="#section-aboutme" class="menu_item entypo-user" title="ABOUT ME"></a></li>
                     <li><a href="#section_curriculumVitae" class="menu_item entypo-graduation-cap" title="CURRICULUM VITAE"></a></li>
@@ -29,39 +27,38 @@
                     <a href="#">Link3</a>
                 </div>
             </nav>
-
         </div>
         <div class="main_content">
-
             <section id="section_home">
                 <header id="website_header">
-
                     <div id="logo">
-
-                        <img id="pingslogo" src="images/logo.svg" alt="Ping's Personal blog'" />
+                        <img id="pingslogo"  src="images/pingslogo.svg" alt="Ping's Logo "/>
                     </div>
-
+                    <img id="pingstitle" src="images/title.svg" alt="Ping's Personal blog'" />
                 </header>
                 <div id="hometitle">
                     <h1 class="title">
-                        <span class="titlecontent  " style="background-color:cornflowerblue;border-bottom-left-radius:5px;border-top-left-radius:5px">KePing </span>
-                        <span class="titlecontent " style="background-color:midnightblue;color:cornflowerblue;border-bottom-right-radius:5px;border-top-right-radius:5px">Zang</span>
+                        <span class="titlecontent " >KePing </span>
+                        <span class="titlecontent ">Zang</span>
                     </h1>
-                    <p style="display:inline-block;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight:bold;background-color:skyblue;color:darkslateblue;border-radius:5px;">Web designer & Developer & C# Developer </p>
+                    <p >Web designer & Developer & C# Developer </p>
                 </div>
-
-
             </section>
             <section id="section-aboutme">
                 <div class="leftcontent">
-                    <img class="leftpic" src="./images/profie.JPG" />
+                    <picture>
+                        <source media="(min-width: 1025px)" srcset="./images/profie.JPG" />
+                        <source media="(min-width: 700px)" srcset="./images/profie_780.jpg"/>
+                        <source media="(min-width: 320px)" srcset="./images/profie_500.jpg"/>
+                        <img class="leftpic" src="./images/profie_240.jpg" />
+                    </picture>
                 </div>
                 <div class="rightcontent">
                     <article class="rightarticle">
                         <div class="sectiontitle">
                             <h2 class="title">
-                                <span class="titlecontent" style="background-color:midnightblue;color:cornflowerblue;border-bottom-left-radius:5px;border-top-left-radius:5px">About</span>
-                                <span class="titlecontent" style="background-color:cornflowerblue;border-bottom-right-radius:5px;border-top-right-radius:5px">Me</span>
+                                <span class="titlecontent" >About</span>
+                                <span class="titlecontent" >Me</span>
                             </h2>
                         </div>
                         <p class="description">
@@ -108,7 +105,6 @@
                                         <a href="https://en.wikipedia.org/wiki/Jay_Chou" target="_blank">Jay Chou</a>
                                         <a class="zocial-youtube" href="https://www.youtube.com/watch?v=-7r6VqSllNg&list=RDEMiTjubl5ivyhGx9AXBRWj6A&index=25" target="_blank"></a>
                                     </td>
-
                                 </tr>
                             </tbody>
                         </table>
@@ -120,12 +116,11 @@
                     <article class="rightarticle">
                         <div class="sectiontitle">
                             <h2 class="title">
-                                <span class="titlecontent" style="background-color:cornflowerblue;border-radius:5px">Resume</span>
+                                <span class="titlecontent">Resume</span>
                             </h2>
-
                         </div>
                         <div class="row">
-                            <div class="col-sm-7" style="padding-right:0px;">
+                            <div class="col-sm-7" >
                                 <div class="event">
                                     <h3 class="h3title">FURTHR EDUCATION</h3>
                                     <p>
@@ -167,66 +162,57 @@
                                 <div class="event">
                                     <h3>09/2005 - 06/2008</h3>
                                     <h4>Shi Yan San High School in GuiYang</h4>
-
-
                                 </div>
                                 <div class="event">
                                     <h3>09/1996 - 06/2005</h3>
                                     <h4>Shui Dian Jiu Ju Elementary School in GuiYang</h4>
                                 </div>
-
                             </div>
                             <div class="col-sm-5">
-                                <div>
+                                <div id="skilltitle">
                                     <h3 class="entypo-keyboard h3title h3titleright">CODING SKILLS</h3>
                                 </div>
                                 <div class="skills">
                                     <div class="skillbar" data-percent="70%">
                                         <div class="skillbar-title">
                                             <span>HTML5</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:70%"></div>
+                                        <div class="skillbar-bar-70 skillbar-bar" ></div>
                                         <div class="skill-bar-percent">70%</div>
                                     </div>
                                     <div class="skillbar" data-percent="60%">
                                         <div class="skillbar-title">
                                             <span>CSS</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:60%"></div>
+                                        <div class="skillbar-bar-60 skillbar-bar" ></div>
                                         <div class="skill-bar-percent">60%</div>
                                     </div>
                                     <div class="skillbar" data-percent="50%">
                                         <div class="skillbar-title">
                                             <span>JAVASCRIPT</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:50%"></div>
+                                        <div class="skillbar-bar-50 skillbar-bar" ></div>
                                         <div class="skill-bar-percent">50%</div>
                                     </div>
                                     <div class="skillbar" data-percent="40%">
                                         <div class="skillbar-title">
                                             <span>PHP</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:40%"></div>
+                                        <div class="skillbar-bar-40 skillbar-bar" ></div>
                                         <div class="skill-bar-percent">40%</div>
                                     </div>
                                     <div class="skillbar" data-percent="80%">
                                         <div class="skillbar-title">
                                             <span>C#</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:80%"></div>
+                                        <div class="skillbar-bar-80 skillbar-bar"></div>
                                         <div class="skill-bar-percent">80%</div>
                                     </div>
                                     <div class="skillbar" data-percent="60%">
                                         <div class="skillbar-title">
                                             <span>SQL</span>
-
                                         </div>
-                                        <div class="skillbar-bar" style="width:60%"></div>
+                                        <div class="skillbar-bar skillbar-bar-60"></div>
                                         <div class="skill-bar-percent">60%</div>
                                     </div>
                                 </div>
@@ -235,18 +221,24 @@
                     </article>
                 </div>
                 <div class="leftcontent">
-                    <img class="leftpic" src="./images/pingspic.jpg" />
+                    <picture>
+                        <source media="(min-width: 1025px)" srcset="./images/pingspic.jpg" />
+                        <source media="(min-width: 700px)" srcset="./images/pingspic_700.jpg"/>
+                        <source media="(min-width: 320px)" srcset="./images/pingspic_320.jpg"/>
+                        <img class="leftpic" src="./images/pingspic_240.jpg" />
+                    </picture>
                 </div>
             </section>
             <section id="section_portfolio">
-                <div class="leftcontent">
-                    <img class="leftpic" id="showpic" src="./images/BodenSee.JPG" />
+                <div class="leftcontent" id="portfolioleft">
+                    <img class="leftpic" id="showpic" src="" />
+                    <div id="imgtext"></div>
                 </div>
-                <div class="rightcontent">
+                <div class="rightcontent" id="portfolioright">
                     <div class="sectiontitle">
                         <h2 class="title">
-                            <span class="titlecontent" style="background-color:midnightblue;color:cornflowerblue;border-bottom-left-radius:5px;border-top-left-radius:5px">My</span>
-                            <span class="titlecontent" style="background-color:cornflowerblue;border-bottom-right-radius:5px;border-top-right-radius:5px">Works</span>
+                            <span class="titlecontent">My</span>
+                            <span class="titlecontent">Works</span>
                         </h2>
                     </div>
                     <ul id="portfolio-filter" class="filters">
@@ -255,45 +247,85 @@
                         <li id="france" class="filter" onclick="filterSelection('france'),activchange(this.id)">France</li>
                         <li id="greek" class="filter" onclick="filterSelection('greek'),activchange(this.id)">Greek</li>
                     </ul>
-                    <ul id="portfolio" class="grid" style="display:block;height:700px;">
+                    <ul id="portfolio" class="grid" >
                         <li class="foliocolumn germany show ">
                             <figure class="content ">
-                                <a onclick="showpic(this.id)" href="#section_portfolio" class="grid-img entypo-eye" id="schloss"><img src="./images/schloss.jpg" /></a>
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img entypo-eye" id="schloss">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/schloss.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/schloss_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/schloss_320.jpg" />
+                                        <img src="./images/schloss_240.jpg" alt="Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Neuschwanstein Castle</div></figcaption>
                         </li>
                         <li class="foliocolumn germany show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#section_portfolio" class="grid-img  entypo-eye" id="wilhelma"><img src="./images/IMG_8290.JPG" /></a>
+                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="wilhelma">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/IMG_8290.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/IMG_8290_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/IMG_8290_320.jpg" />
+                                        <img src="./images/IMG_8290_240.JPG" alt="Wilhelma is a zoological-botanical garden in Stuttgart in the Bad Cannstatt district in the north of the city on the grounds of a historic castle." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Wilhelma</div></figcaption>
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#section_portfolio" class="grid-img  entypo-eye" id="eiffel"><img src="./images/tower.jpg" /></a>
+                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="eiffel">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/tower.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/tower_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/tower_320.jpg" />
+                                        <img src="./images/tower_240.jpg" alt="The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Eiffel Tower</div></figcaption>
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#section_portfolio" class="grid-img  entypo-eye" id="louvre"><img src="./images/paris.jpg" /></a>
+                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="louvre">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/paris.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/paris_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/paris_320.jpg" />
+                                        <img src="./images/paris_240.jpg" alt="The Louvre or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Louvre</div></figcaption>
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#section_portfolio" class="grid-img  entypo-eye" id="santorini1"><img src="./images/greek.jpg" /></a>
+                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="santorini1">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/greek.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/greek_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/greek_320.jpg" />
+                                        <img src="./images/greek_240.jpg" alt="Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Santorini</div></figcaption>
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#section_portfolio" class="grid-img  entypo-eye" id="santorini2"><img src="./images/santorini.jpg" /></a>
+                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="santorini2">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/santorini.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/santorini_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/santorini_320.jpg" />
+                                        <img src="./images/santorini_240.jpg" alt="Santorini classically Thera  and officially Thira, is an island in the southern Aegean Sea, about 200 km (120 mi) southeast of Greece's mainland." />
+                                    </picture>
+                                </a>
                             </figure>
                             <figcaption><div class="grid-title">Santorini</div></figcaption>
                         </li>
-
-
                     </ul>
                 </div>
             </section>
@@ -301,7 +333,7 @@
                 <div class="leftcontent" >
                     <div class="sectiontitle">
                         <h2 class="title">
-                            <span class="titlecontent" style="background-color:midnightblue;color:cornflowerblue;border-radius:5px;">Contact</span>
+                            <span class="titlecontent">Contact</span>
                         </h2>
                     </div>
                     <div class="contact-form">
@@ -310,7 +342,7 @@
                             <div class="letterinfo">
                                 <h4>Keping Zang</h4>
                                 <p>
-                                    <a href="#" style="color:#e54242"><i>dotping@online.de</i></a>
+                                    <a href="#"><i>dotping@online.de</i></a>
                                 </p>
                                 <p>
                                     -Esslingen am Neckar Germany
@@ -334,9 +366,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="rightcontent" style="overflow:hidden">
+                <div class="rightcontent">
                     <div id="map">
-
                     </div>
                     <script>
                         function initMap() {
