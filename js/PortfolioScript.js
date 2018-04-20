@@ -74,11 +74,66 @@ function openmenu(id)
 }
 function showpic(id)
 {
-               
+    var portfolioleft = document.getElementById("portfolioleft");
+    var imgtext = document.getElementById("imgtext");
+    portfolioleft.style.display = "block";
     var pic = document.getElementById("showpic");
-    var hoverpic = document.getElementById(id).firstChild;
-    var hoverpicsrc = hoverpic.getAttribute("src");
-  
+    var portfolioright = document.getElementById("portfolioright");
+    var picture = document.getElementById(id).firstElementChild;
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width > 800)
+    {
+       
+        portfolioright.style.height = "40%";
+        portfolioleft.style.width = "100%";
+        portfolioleft.style.height = "60%";
+       
+        
+    }
+    else
+    {
+        portfolioleft.style.width = "100%";
+        portfolioleft.style.height = "35%";
+        portfolioright.style.height = "65%";
+    }
+    if (width >= 320 && width <700)
+    {
+        var hoverpic = document.getElementById(id).firstElementChild.children[2];
+        var hoverpicsrc = hoverpic.getAttribute("srcset");
+        
+       
+    }
+    else if (width >= 700 && width < 1025)
+    {
+        var hoverpic = document.getElementById(id).firstElementChild.children[1];
+        var hoverpicsrc = hoverpic.getAttribute("srcset");
+       
+    }
+    else if (width >= 1025)
+    {
+
+        var hoverpic = document.getElementById(id).firstElementChild.children[0];
+        var hoverpicsrc = hoverpic.getAttribute("srcset");
+    }
+    else {
+        var hoverpic = document.getElementById(id).firstElementChild.children[3];
+        var hoverpicsrc = hoverpic.getAttribute("src");
+    }
+    
+    
     
     pic.setAttribute("src", hoverpicsrc);
+    imgtext.innerHTML = picture.children[3].getAttribute("alt");
+   
 }
+function showrightportfolio()
+{
+    var portfolioleft = document.getElementById("portfolioleft");
+    if (portfolioleft.style.display == "")
+    {
+        var portfolioright = document.getElementById("portfolioright");
+        portfolioright.style.width = "100%";
+        portfolioright.style.height = "100%";
+    }
+}
+
