@@ -9,8 +9,14 @@ I created:
 - section
 - portfolio pics
 
-I was not sure if you want 100% the same design and I asked
-but got no anwser ... :(
+I was not sure if you want 100% the same design or if I am free to
+make my own page ...
 
-    
+Styles:
+- CSS styles with Visual Studio Code + Extension : beautiful CSS
+- same to HTML
 
+Tested:
+- Windows 10 Chrome
+- Windows 10 Firefox
+- all Desktop, iPad and Smartphone was tested via emulator

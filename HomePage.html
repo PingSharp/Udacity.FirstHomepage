@@ -1,25 +1,39 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>My HomePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link href="css\MainStylesheet.css" rel="stylesheet"/>
-    <link href="css\bootstrap.min.css" rel="stylesheet"/>
-    <link href="css\Responsive.css" rel="stylesheet"/>
-    <script src="js\PortfolioScript.js" ></script>
+    <link href="css\MainStylesheet.css" rel="stylesheet" />
+    <link href="css\bootstrap.min.css" rel="stylesheet" />
+    <link href="css\Responsive.css" rel="stylesheet" />
+    <script src="js\PortfolioScript.js"></script>
 </head>
-<body onload="showrightportfolio()" >
+
+<body onload="showrightportfolio()">
     <div class="main">
         <div id="side_menu">
             <nav id="main_menu">
                 <ul>
-                    <li><a href="#" id="dropdownmenu" class="menu_item entypo-air" onclick="openmenu(this.id)" title="MENU"></a></li>                    
-                    <li><a href="#" class="menu_item entypo-home" title="HOME"></a></li>
-                    <li><a href="#section-aboutme" class="menu_item entypo-user" title="ABOUT ME"></a></li>
-                    <li><a href="#section_curriculumVitae" class="menu_item entypo-graduation-cap" title="CURRICULUM VITAE"></a></li>
-                    <li><a href="#section_portfolio" class="menu_item entypo-suitcase" title="PORTFOLIO"></a></li>
-                    <li><a href="#section_contact" class="menu_item entypo-mail" title="CONTACT"></a></li>
+                    <li>
+                        <a href="#" id="dropdownmenu" class="menu_item entypo-air" onclick="openmenu(this.id)" title="MENU"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item entypo-home" title="HOME"></a>
+                    </li>
+                    <li>
+                        <a href="#section-aboutme" class="menu_item entypo-user" title="ABOUT ME"></a>
+                    </li>
+                    <li>
+                        <a href="#section_curriculumVitae" class="menu_item entypo-graduation-cap" title="CURRICULUM VITAE"></a>
+                    </li>
+                    <li>
+                        <a href="#section_portfolio" class="menu_item entypo-suitcase" title="PORTFOLIO"></a>
+                    </li>
+                    <li>
+                        <a href="#section_contact" class="menu_item entypo-mail" title="CONTACT"></a>
+                    </li>
                 </ul>
                 <div id="dropdownitem" class="dropdown-container">
                     <a href="#">Link1</a>
@@ -33,17 +47,17 @@
                 <div id="logo">
                     <img id="pingslogo" src="images/pingslogo.svg" alt="Ping's Logo " />
                 </div>
-                <h1  id="pingstitle" >Ping's blog </h1>
+                <h1 id="pingstitle">Ping's blog </h1>
             </header>
             <div class="border"></div>
             <section id="section_home">
-                
+
                 <div id="hometitle">
                     <h1 class="title">
-                        <span class="titlecontent " >KePing </span>
+                        <span class="titlecontent ">KePing </span>
                         <span class="titlecontent ">Zang</span>
                     </h1>
-                    <p >Web designer & Developer & C# Developer </p>
+                    <p>Web designer & Developer & C# Developer </p>
                 </div>
             </section>
             <section id="section_portfolio">
@@ -72,11 +86,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/schloss.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/schloss_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/schloss_320.jpg" />
-                                        <img src="./images/schloss_240.jpg" alt="Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany." />
+                                        <img src="./images/schloss_240.jpg" alt="Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Neuschwanstein Castle</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Neuschwanstein Castle</div>
+                            </figcaption>
                         </li>
                         <li class="foliocolumn germany show">
                             <figure class="content">
@@ -85,11 +102,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/IMG_8290.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/IMG_8290_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/IMG_8290_320.jpg" />
-                                        <img src="./images/IMG_8290_240.JPG" alt="Wilhelma is a zoological-botanical garden in Stuttgart in the Bad Cannstatt district in the north of the city on the grounds of a historic castle." />
+                                        <img src="./images/IMG_8290_240.JPG" alt="Wilhelma is a zoological-botanical garden in Stuttgart in the Bad Cannstatt district in the north of the city on the grounds of a historic castle."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Wilhelma</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Wilhelma</div>
+                            </figcaption>
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
@@ -98,11 +118,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/tower.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/tower_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/tower_320.jpg" />
-                                        <img src="./images/tower_240.jpg" alt="The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France." />
+                                        <img src="./images/tower_240.jpg" alt="The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Eiffel Tower</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Eiffel Tower</div>
+                            </figcaption>
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
@@ -111,11 +134,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/paris.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/paris_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/paris_320.jpg" />
-                                        <img src="./images/paris_240.jpg" alt="The Louvre or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France." />
+                                        <img src="./images/paris_240.jpg" alt="The Louvre or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Louvre</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Louvre</div>
+                            </figcaption>
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
@@ -124,11 +150,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/greek.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/greek_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/greek_320.jpg" />
-                                        <img src="./images/greek_240.jpg" alt="Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece." />
+                                        <img src="./images/greek_240.jpg" alt="Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Santorini</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Santorini</div>
+                            </figcaption>
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
@@ -137,11 +166,14 @@
                                         <source media="(min-width: 1025px)" srcset="./images/santorini.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/santorini_700.jpg" />
                                         <source media="(min-width: 320px)" srcset="./images/santorini_320.jpg" />
-                                        <img src="./images/santorini_240.jpg" alt="Santorini classically Thera  and officially Thira, is an island in the southern Aegean Sea, about 200 km (120 mi) southeast of Greece's mainland." />
+                                        <img src="./images/santorini_240.jpg" alt="Santorini classically Thera  and officially Thira, is an island in the southern Aegean Sea, about 200 km (120 mi) southeast of Greece's mainland."
+                                        />
                                     </picture>
                                 </a>
                             </figure>
-                            <figcaption><div class="grid-title">Santorini</div></figcaption>
+                            <figcaption>
+                                <div class="grid-title">Santorini</div>
+                            </figcaption>
                         </li>
                     </ul>
                 </div>
@@ -150,8 +182,8 @@
                 <div class="leftcontent">
                     <picture>
                         <source media="(min-width: 1025px)" srcset="./images/profie.JPG" />
-                        <source media="(min-width: 700px)" srcset="./images/profie_780.jpg"/>
-                        <source media="(min-width: 320px)" srcset="./images/profie_500.jpg"/>
+                        <source media="(min-width: 700px)" srcset="./images/profie_780.jpg" />
+                        <source media="(min-width: 320px)" srcset="./images/profie_500.jpg" />
                         <img class="leftpic" src="./images/profie_240.jpg" />
                     </picture>
                 </div>
@@ -159,19 +191,17 @@
                     <article class="rightarticle">
                         <div class="sectiontitle">
                             <h2 class="title">
-                                <span class="titlecontent" >About</span>
-                                <span class="titlecontent" >Me</span>
+                                <span class="titlecontent">About</span>
+                                <span class="titlecontent">Me</span>
                             </h2>
                         </div>
                         <p class="description">
-                            Hello! I am KePing Zang.I am 28 years old,born in GuiYang GuiZhou province in china.
-                            I was graduated from Guizhou Medical University. my major is nursing.
-                            and I got my bachelor degree after my graduation in the year of 2012.I spend most of my time on study .
-                            and I have acquired basic knowledge of my major during my school time.Since 2013 I live in germany.
-                            I learned german in germany,since 2016 I start to learn programming.I have learned C# in 2017,
-                            now I am learning Front-End-Development in Udacity.
-                            Programming has changed my life.
-                            I have a lot of fun with it.I will keep learning programming.
+                            Hello! I am KePing Zang.I am 28 years old,born in GuiYang GuiZhou province in china. I was graduated from Guizhou Medical
+                            University. my major is nursing. and I got my bachelor degree after my graduation in the year
+                            of 2012.I spend most of my time on study . and I have acquired basic knowledge of my major during
+                            my school time.Since 2013 I live in germany. I learned german in germany,since 2016 I start to
+                            learn programming.I have learned C# in 2017, now I am learning Front-End-Development in Udacity.
+                            Programming has changed my life. I have a lot of fun with it.I will keep learning programming.
                         </p>
                         <table class="infotable">
                             <tbody class="infotablebody">
@@ -188,12 +218,16 @@
                                 <tr>
                                     <th class="fontawesome-pushpin"></th>
                                     <td class="rowheadname">Position</td>
-                                    <td class="rowcontent"><a href="https://en.wikipedia.org/wiki/Esslingen_am_Neckar" target="_blank">Esslingen am Neckar,Germany</a></td>
+                                    <td class="rowcontent">
+                                        <a href="https://en.wikipedia.org/wiki/Esslingen_am_Neckar" target="_blank">Esslingen am Neckar,Germany</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th class="fontawesome-globe"></th>
                                     <td class="rowheadname">HomeTown</td>
-                                    <td class="rowcontent"><a href="https://en.wikipedia.org/wiki/Guiyang" target="_blank">GuiYang,GuiZhou,China</a></td>
+                                    <td class="rowcontent">
+                                        <a href="https://en.wikipedia.org/wiki/Guiyang" target="_blank">GuiYang,GuiZhou,China</a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th class="entypo-flight"></th>
@@ -222,7 +256,7 @@
                             </h2>
                         </div>
                         <div class="row">
-                            <div class="col-sm-7" >
+                            <div class="col-sm-7">
                                 <div class="event">
                                     <h3 class="h3title">FURTHR EDUCATION</h3>
                                     <p>
@@ -279,28 +313,28 @@
                                         <div class="skillbar-title">
                                             <span>HTML5</span>
                                         </div>
-                                        <div class="skillbar-bar-70 skillbar-bar" ></div>
+                                        <div class="skillbar-bar-70 skillbar-bar"></div>
                                         <div class="skill-bar-percent">70%</div>
                                     </div>
                                     <div class="skillbar" data-percent="60%">
                                         <div class="skillbar-title">
                                             <span>CSS</span>
                                         </div>
-                                        <div class="skillbar-bar-60 skillbar-bar" ></div>
+                                        <div class="skillbar-bar-60 skillbar-bar"></div>
                                         <div class="skill-bar-percent">60%</div>
                                     </div>
                                     <div class="skillbar" data-percent="50%">
                                         <div class="skillbar-title">
                                             <span>JAVASCRIPT</span>
                                         </div>
-                                        <div class="skillbar-bar-50 skillbar-bar" ></div>
+                                        <div class="skillbar-bar-50 skillbar-bar"></div>
                                         <div class="skill-bar-percent">50%</div>
                                     </div>
                                     <div class="skillbar" data-percent="40%">
                                         <div class="skillbar-title">
                                             <span>PHP</span>
                                         </div>
-                                        <div class="skillbar-bar-40 skillbar-bar" ></div>
+                                        <div class="skillbar-bar-40 skillbar-bar"></div>
                                         <div class="skill-bar-percent">40%</div>
                                     </div>
                                     <div class="skillbar" data-percent="80%">
@@ -325,14 +359,14 @@
                 <div class="leftcontent">
                     <picture>
                         <source media="(min-width: 1025px)" srcset="./images/pingspic.jpg" />
-                        <source media="(min-width: 700px)" srcset="./images/pingspic_700.jpg"/>
-                        <source media="(min-width: 320px)" srcset="./images/pingspic_320.jpg"/>
+                        <source media="(min-width: 700px)" srcset="./images/pingspic_700.jpg" />
+                        <source media="(min-width: 320px)" srcset="./images/pingspic_320.jpg" />
                         <img class="leftpic" src="./images/pingspic_240.jpg" />
                     </picture>
                 </div>
             </section>
             <section id="section_contact">
-                <div class="leftcontent" >
+                <div class="leftcontent">
                     <div class="sectiontitle">
                         <h2 class="title">
                             <span class="titlecontent">Contact</span>
@@ -344,7 +378,9 @@
                             <div class="letterinfo">
                                 <h4>Keping Zang</h4>
                                 <p>
-                                    <a href="#"><i>dotping@online.de</i></a>
+                                    <a href="#">
+                                        <i>dotping@online.de</i>
+                                    </a>
                                 </p>
                                 <p>
                                     -Esslingen am Neckar Germany
@@ -391,12 +427,19 @@
         <footer id="website_footer">
             <div class="footer_social">
                 <ul class="social">
-                    <li class="socialitem"><a class="fontawesome-github" href="#" title="github"></a></li>
-                    <li class="socialitem"><a class="entypo-sina-weibo" href="#" title="sina-weibo"></a></li>
-                    <li class="socialitem"><a class="entypo-qq" href="#" title="QQ"></a></li>
+                    <li class="socialitem">
+                        <a class="fontawesome-github" href="#" title="github"></a>
+                    </li>
+                    <li class="socialitem">
+                        <a class="entypo-sina-weibo" href="#" title="sina-weibo"></a>
+                    </li>
+                    <li class="socialitem">
+                        <a class="entypo-qq" href="#" title="QQ"></a>
+                    </li>
                 </ul>
             </div>
         </footer>
     </div>
 </body>
+
 </html>

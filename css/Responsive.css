@@ -1,7 +1,7 @@
-﻿@media screen and  (max-width:480px) {
+@media screen and (max-width:480px) {
     #side_menu {
-       width: 11%;
-     }
+        width: 11%;
+    }
 
     #main_menu ul li a {
         width: 5em;
@@ -9,11 +9,11 @@
     }
 
     #main_menu ul li a:before {
-        font-size:32px;
+        font-size: 32px;
     }
 
     .main_content {
-      width: 88%;
+        width: 88%;
         padding-left: 1%;
     }
 
@@ -25,14 +25,14 @@
         left: -2.6%;
     }
 
-    #pingslogo{
+    #pingslogo {
         position: relative;
         left: 30%;
     }
 
     #pingstitle {
-      right: -1%;
-      bottom: -110px;
+        right: -1%;
+        bottom: -110px;
     }
 
     .titlecontent {
@@ -41,40 +41,40 @@
     }
 
     #hometitle {
-       top: 0px;
-   }
+        top: 0px;
+    }
 
-   #hometitle .title{
-       left: -1%;
-   }
+    #hometitle .title {
+        left: -1%;
+    }
 
-   .title {
-       margin-left: -35px;
-   }
+    .title {
+        margin-left: -35px;
+    }
 
-   .titlecontent {
-      margin-left: 5px;
-   }
+    .titlecontent {
+        margin-left: 5px;
+    }
 
     #hometitle p {
-       position: relative;
-       top: 90px;
-       left: -36px;
-       width: 75%;
-       font-size: 1.5em;
-       opacity: 0.6;
+        position: relative;
+        top: 90px;
+        left: -36px;
+        width: 75%;
+        font-size: 1.5em;
+        opacity: 0.6;
     }
 
     #section-aboutme {
-       height: auto;
-       margin-bottom: 50px;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .leftcontent {
-       width: 100%;
-       height: auto;
-       order: 2;
-       margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        order: 2;
+        margin-bottom: 10px;
     }
 
     .rightcontent {
@@ -130,12 +130,12 @@
         margin-bottom: 100px;
     }
 
-   #section_portfolio .leftcontent {
-       overflow: auto;
-       margin-left: 10px;
+    #section_portfolio .leftcontent {
+        overflow: auto;
+        margin-left: 10px;
     }
 
-    .grid > li > figure > a:before {
+    .grid>li>figure>a:before {
         left: 39%;
     }
 
@@ -163,9 +163,8 @@
     }
 
     .contactform {
-        margin-left: -10.5px;    
+        margin-left: -10.5px;
     }
-
 
     #section_contact .leftcontent {
         display: block;
@@ -187,7 +186,7 @@
     }
 
     .letterinfo p {
-        margin-left:0px;
+        margin-left: 0px;
     }
 
     #website_footer {
@@ -197,9 +196,10 @@
         bottom: 0px;
         opacity: 0.6;
     }
+
 }
 
-@media screen and  (max-width:600px) and (min-width:481px) {
+@media screen and (max-width:600px) and (min-width:481px) {
     #side_menu {
         width: 9%;
     }
@@ -209,7 +209,7 @@
         left: 30%;
     }
 
-    #hometitle .title{
+    #hometitle .title {
         left: -1%;
     }
 
@@ -239,8 +239,8 @@
     }
 
     #pingstitle {
-       right: -1%;
-       bottom: -120px;
+        right: -1%;
+        bottom: -120px;
     }
 
     #section-aboutme {
@@ -252,14 +252,13 @@
         width: 100%;
         height: auto;
         order: 1;
-   }
+    }
 
     .rightcontent {
         width: 100%;
         height: auto;
         overflow: auto;
         order: -1;
-
     }
 
     #section_curriculumVitae {
@@ -287,7 +286,7 @@
         height: auto;
     }
 
-    .grid > li > figure > a:before {
+    .grid>li>figure>a:before {
         left: 44%;
     }
 
@@ -318,7 +317,7 @@
     }
 
     .socialitem {
-       width: 4em;
+        width: 4em;
     }
 
     .social li .fontawesome-github:before {
@@ -352,7 +351,7 @@
         width: 4.5em;
     }
 
-    #website_header{
+    #website_header {
         height: 50px;
     }
 
@@ -361,17 +360,12 @@
         background-size: cover;
     }
 
-    #pingslogo {
-       
-       
-    }
-
     #pingstitle {
         right: 11%;
         bottom: -110px;
     }
 
-    #hometitle .title{
+    #hometitle .title {
         left: -10%;
     }
 
@@ -424,7 +418,7 @@
         overflow: auto;
     }
 
-    .grid > li > figure > a:before {
+    .grid>li>figure>a:before {
         left: 38%;
     }
 
@@ -481,6 +475,7 @@
         font-size: 2.1em;
         padding-left: 16px;
     }
+
 }
 
 @media screen and (max-width:1024px) and (min-width:801px) {
@@ -494,83 +489,83 @@
     }
 
     #pingstitle {
-      right: 10%;
+        right: 10%;
     }
 
     #hometitle .title {
         left: -11%;
     }
 
-   .main_content {
-       width: 91%;
-   }
+    .main_content {
+        width: 91%;
+    }
 
-   #pingslogo {
-       position: relative;
-       right: 5%;
-   }
+    #pingslogo {
+        position: relative;
+        right: 5%;
+    }
 
-   #section-aboutme {
-       height: auto;
-   }
+    #section-aboutme {
+        height: auto;
+    }
 
-   #section-aboutme .leftcontent {
-       width: 43%;
-       height: auto;
-       margin-right: 20px;
-   }
+    #section-aboutme .leftcontent {
+        width: 43%;
+        height: auto;
+        margin-right: 20px;
+    }
 
-   #section-aboutme .rightcontent {
-       width: 54%;
-       height: auto;
-   }
+    #section-aboutme .rightcontent {
+        width: 54%;
+        height: auto;
+    }
 
-   #section_curriculumVitae {
-       height: auto;
-   }
+    #section_curriculumVitae {
+        height: auto;
+    }
 
-   #section_curriculumVitae .leftcontent {
-       width: 43%;
-       height: auto;
-   }
+    #section_curriculumVitae .leftcontent {
+        width: 43%;
+        height: auto;
+    }
 
-   #section_curriculumVitae .rightcontent {
-       width: 54%;
-       height: auto;
-       margin-right: 20px;
-   }
+    #section_curriculumVitae .rightcontent {
+        width: 54%;
+        height: auto;
+        margin-right: 20px;
+    }
 
-   #section_portfolio {
-       height: auto;
-   }
+    #section_portfolio {
+        height: auto;
+    }
 
-   #section_portfolio .leftcontent {
-       width: 43%;
-       height: auto;
-       margin-right: 20px;
-       order: 1;
-   }
+    #section_portfolio .leftcontent {
+        width: 43%;
+        height: auto;
+        margin-right: 20px;
+        order: 1;
+    }
 
-   #section_portfolio .rightcontent {
-       width: 54%;
-       height: auto;
-       order: -1;
-   }
+    #section_portfolio .rightcontent {
+        width: 54%;
+        height: auto;
+        order: -1;
+    }
 
-   #section_contact {
-       height: auto;
-   }
+    #section_contact {
+        height: auto;
+    }
 
-   #section_contact .leftcontent {
-       width: 54%;
-       height: auto;
-       margin-right: 20px;
-   }
+    #section_contact .leftcontent {
+        width: 54%;
+        height: auto;
+        margin-right: 20px;
+    }
 
-   #section_contact .rightcontent {
-       width: 43%;
-       height: auto;
-   }
+    #section_contact .rightcontent {
+        width: 43%;
+        height: auto;
+    }
 
     #website_footer {
         height: 160px;
@@ -603,6 +598,7 @@
         font-size: 2.2em;
         padding-left: 20px;
     }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -614,11 +610,11 @@
         margin-right: 1.5%;
     }
 
-    #section_portfolio .leftcontent{
+    #section_portfolio .leftcontent {
         order: 1;
     }
 
-    #section_portfolio .rightcontent{
+    #section_portfolio .rightcontent {
         order: -1;
     }
 
@@ -645,7 +641,7 @@
 
     .socialitem {
         width: 4.2em;
-        display:block;
+        display: block;
     }
 
     .social li .fontawesome-github:before {
@@ -665,4 +661,5 @@
         padding-left: 25px;
         line-height: 1.5em;
     }
+
 }
