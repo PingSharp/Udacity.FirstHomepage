@@ -29,19 +29,121 @@
             </nav>
         </div>
         <div class="main_content">
+            <header id="website_header">
+                <div id="logo">
+                    <img id="pingslogo" src="images/pingslogo.svg" alt="Ping's Logo " />
+                </div>
+                <h1  id="pingstitle" >Ping's blog </h1>
+            </header>
+            <div class="border"></div>
             <section id="section_home">
-                <header id="website_header">
-                    <div id="logo">
-                        <img id="pingslogo"  src="images/pingslogo.svg" alt="Ping's Logo "/>
-                    </div>
-                    <img id="pingstitle" src="images/title.svg" alt="Ping's Personal blog'" />
-                </header>
+                
                 <div id="hometitle">
                     <h1 class="title">
                         <span class="titlecontent " >KePing </span>
                         <span class="titlecontent ">Zang</span>
                     </h1>
                     <p >Web designer & Developer & C# Developer </p>
+                </div>
+            </section>
+            <section id="section_portfolio">
+                <div class="leftcontent" id="portfolioleft">
+                    <img class="leftpic" id="showpic" src="" />
+                    <div id="imgtext"></div>
+                </div>
+                <div class="rightcontent" id="portfolioright">
+                    <div class="sectiontitle">
+                        <h2 class="title">
+                            <span class="titlecontent">My</span>
+                            <span class="titlecontent">Works</span>
+                        </h2>
+                    </div>
+                    <ul id="portfolio-filter" class="filters">
+                        <li id="all" class="filter gridactive" onclick="filterSelection('all'),activchange(this.id)">ALL</li>
+                        <li id="germany" class="filter" onclick="filterSelection('germany'),activchange(this.id)">Germany</li>
+                        <li id="france" class="filter" onclick="filterSelection('france'),activchange(this.id)">France</li>
+                        <li id="greek" class="filter" onclick="filterSelection('greek'),activchange(this.id)">Greek</li>
+                    </ul>
+                    <ul id="portfolio" class="grid">
+                        <li class="foliocolumn germany show ">
+                            <figure class="content ">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img entypo-eye" id="schloss">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/schloss.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/schloss_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/schloss_320.jpg" />
+                                        <img src="./images/schloss_240.jpg" alt="Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Neuschwanstein Castle</div></figcaption>
+                        </li>
+                        <li class="foliocolumn germany show">
+                            <figure class="content">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="wilhelma">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/IMG_8290.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/IMG_8290_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/IMG_8290_320.jpg" />
+                                        <img src="./images/IMG_8290_240.JPG" alt="Wilhelma is a zoological-botanical garden in Stuttgart in the Bad Cannstatt district in the north of the city on the grounds of a historic castle." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Wilhelma</div></figcaption>
+                        </li>
+                        <li class="foliocolumn france show">
+                            <figure class="content">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="eiffel">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/tower.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/tower_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/tower_320.jpg" />
+                                        <img src="./images/tower_240.jpg" alt="The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Eiffel Tower</div></figcaption>
+                        </li>
+                        <li class="foliocolumn france show">
+                            <figure class="content">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="louvre">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/paris.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/paris_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/paris_320.jpg" />
+                                        <img src="./images/paris_240.jpg" alt="The Louvre or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Louvre</div></figcaption>
+                        </li>
+                        <li class="foliocolumn greek show">
+                            <figure class="content">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="santorini1">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/greek.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/greek_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/greek_320.jpg" />
+                                        <img src="./images/greek_240.jpg" alt="Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Santorini</div></figcaption>
+                        </li>
+                        <li class="foliocolumn greek show">
+                            <figure class="content">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="santorini2">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/santorini.jpg" />
+                                        <source media="(min-width: 700px)" srcset="./images/santorini_700.jpg" />
+                                        <source media="(min-width: 320px)" srcset="./images/santorini_320.jpg" />
+                                        <img src="./images/santorini_240.jpg" alt="Santorini classically Thera  and officially Thira, is an island in the southern Aegean Sea, about 200 km (120 mi) southeast of Greece's mainland." />
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Santorini</div></figcaption>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section id="section-aboutme">
@@ -227,106 +329,6 @@
                         <source media="(min-width: 320px)" srcset="./images/pingspic_320.jpg"/>
                         <img class="leftpic" src="./images/pingspic_240.jpg" />
                     </picture>
-                </div>
-            </section>
-            <section id="section_portfolio">
-                <div class="leftcontent" id="portfolioleft">
-                    <img class="leftpic" id="showpic" src="" />
-                    <div id="imgtext"></div>
-                </div>
-                <div class="rightcontent" id="portfolioright">
-                    <div class="sectiontitle">
-                        <h2 class="title">
-                            <span class="titlecontent">My</span>
-                            <span class="titlecontent">Works</span>
-                        </h2>
-                    </div>
-                    <ul id="portfolio-filter" class="filters">
-                        <li id="all" class="filter gridactive" onclick="filterSelection('all'),activchange(this.id)">ALL</li>
-                        <li id="germany" class="filter" onclick="filterSelection('germany'),activchange(this.id)">Germany</li>
-                        <li id="france" class="filter" onclick="filterSelection('france'),activchange(this.id)">France</li>
-                        <li id="greek" class="filter" onclick="filterSelection('greek'),activchange(this.id)">Greek</li>
-                    </ul>
-                    <ul id="portfolio" class="grid" >
-                        <li class="foliocolumn germany show ">
-                            <figure class="content ">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img entypo-eye" id="schloss">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/schloss.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/schloss_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/schloss_320.jpg" />
-                                        <img src="./images/schloss_240.jpg" alt="Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Neuschwanstein Castle</div></figcaption>
-                        </li>
-                        <li class="foliocolumn germany show">
-                            <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="wilhelma">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/IMG_8290.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/IMG_8290_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/IMG_8290_320.jpg" />
-                                        <img src="./images/IMG_8290_240.JPG" alt="Wilhelma is a zoological-botanical garden in Stuttgart in the Bad Cannstatt district in the north of the city on the grounds of a historic castle." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Wilhelma</div></figcaption>
-                        </li>
-                        <li class="foliocolumn france show">
-                            <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="eiffel">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/tower.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/tower_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/tower_320.jpg" />
-                                        <img src="./images/tower_240.jpg" alt="The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Eiffel Tower</div></figcaption>
-                        </li>
-                        <li class="foliocolumn france show">
-                            <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="louvre">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/paris.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/paris_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/paris_320.jpg" />
-                                        <img src="./images/paris_240.jpg" alt="The Louvre or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Louvre</div></figcaption>
-                        </li>
-                        <li class="foliocolumn greek show">
-                            <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="santorini1">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/greek.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/greek_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/greek_320.jpg" />
-                                        <img src="./images/greek_240.jpg" alt="Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Santorini</div></figcaption>
-                        </li>
-                        <li class="foliocolumn greek show">
-                            <figure class="content">
-                                <a onclick="showpic(this.id)"  href="#portfolioleft" class="grid-img  entypo-eye" id="santorini2">
-                                    <picture>
-                                        <source media="(min-width: 1025px)" srcset="./images/santorini.jpg" />
-                                        <source media="(min-width: 700px)" srcset="./images/santorini_700.jpg" />
-                                        <source media="(min-width: 320px)" srcset="./images/santorini_320.jpg" />
-                                        <img src="./images/santorini_240.jpg" alt="Santorini classically Thera  and officially Thira, is an island in the southern Aegean Sea, about 200 km (120 mi) southeast of Greece's mainland." />
-                                    </picture>
-                                </a>
-                            </figure>
-                            <figcaption><div class="grid-title">Santorini</div></figcaption>
-                        </li>
-                    </ul>
                 </div>
             </section>
             <section id="section_contact">

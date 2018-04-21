@@ -25,8 +25,14 @@
         left: -2.6%;
     }
 
+    #pingslogo{
+        position: relative;
+        left: 30%;
+    }
+
     #pingstitle {
-        display: none;
+      right: -1%;
+      bottom: -110px;
     }
 
     .titlecontent {
@@ -36,6 +42,10 @@
 
     #hometitle {
        top: 0px;
+   }
+
+   #hometitle .title{
+       left: -1%;
    }
 
    .title {
@@ -56,22 +66,22 @@
     }
 
     #section-aboutme {
-       height: 1960px;
+       height: auto;
        margin-bottom: 50px;
     }
 
     .leftcontent {
        width: 100%;
-       height: 25%;
-       order: -2;
+       height: auto;
+       order: 2;
        margin-bottom: 10px;
     }
 
     .rightcontent {
         width: 100%;
         overflow: auto;
-        height: 75%;
-        order: 2;
+        height: auto;
+        order: -2;
     }
 
     .sectiontitle {
@@ -97,16 +107,17 @@
     }
 
     #section_curriculumVitae {
-        height: 2550px;
+        height: auto;
         margin-bottom: 70px;
     }
 
     #section_curriculumVitae .rightcontent {
-        height: 80%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     #section_curriculumVitae .leftcontent {
-        height: 20%;
+        height: auto;
     }
 
     .row .col-sm-5 {
@@ -115,13 +126,12 @@
     }
 
     #section_portfolio {
-        height: 1400px;
+        height: auto;
         margin-bottom: 100px;
     }
 
    #section_portfolio .leftcontent {
        overflow: auto;
-       margin-bottom: 10px;
        margin-left: 10px;
     }
 
@@ -130,8 +140,9 @@
     }
 
     #section_portfolio .rightcontent {
-        height: 1100px;
+        height: auto;
         margin-left: 10px;
+        margin: 30px;
     }
 
     #portfolio {
@@ -148,18 +159,23 @@
     }
 
     #section_contact {
-        height: 1500px;
+        height: auto;
     }
+
+    .contactform {
+        margin-left: -10.5px;    
+    }
+
 
     #section_contact .leftcontent {
         display: block;
         overflow: hidden;
-        height: 50%;
+        height: auto;
         width: 100%;
     }
 
     #section_contact .rightcontent {
-        height: 50%;
+        height: auto;
     }
 
     .contact-form {
@@ -188,6 +204,15 @@
         width: 9%;
     }
 
+    #pingslogo {
+        position: relative;
+        left: 30%;
+    }
+
+    #hometitle .title{
+        left: -1%;
+    }
+
     #main_menu ul li a:before {
         font-size: 35px;
     }
@@ -214,38 +239,42 @@
     }
 
     #pingstitle {
-        display: none;
+       right: -1%;
+       bottom: -120px;
     }
 
     #section-aboutme {
         display: block;
-        height: 1650px;
+        height: auto;
     }
 
     .leftcontent {
         width: 100%;
-        height: 40%;
+        height: auto;
+        order: 1;
    }
 
     .rightcontent {
         width: 100%;
-        height: 60%;
-        overflow: hidden;
+        height: auto;
+        overflow: auto;
+        order: -1;
+
     }
 
     #section_curriculumVitae {
         margin-bottom: 30px;
-        height: 2760px;
+        height: auto;
     }
 
     #section_curriculumVitae .rightcontent {
         order: 2;
-        height: 80%;
+        height: auto;
     }
 
     #section_curriculumVitae .leftcontent {
         order: -2;
-        height: 20%;
+        height: auto;
         margin-bottom: 30px;
     }
 
@@ -255,7 +284,7 @@
     }
 
     #section_portfolio {
-        height: 1400px;
+        height: auto;
     }
 
     .grid > li > figure > a:before {
@@ -263,29 +292,29 @@
     }
 
     #section_contact {
-        height: 1200px;
+        height: auto;
     }
 
     #section_contact .leftcontent {
         overflow: hidden;
-        height: 60%;
+        height: auto;
     }
 
     #section_contact .rightcontent {
-        height: 40%;
+        height: auto;
     }
 
     #website_footer {
-        height: 160px;
+        height: auto;
         top: 78%;
     }
 
     .footer_social {
-        height: 100%;
+        height: auto;
     }
 
     .social {
-        height: 100%;
+        height: auto;
     }
 
     .socialitem {
@@ -323,51 +352,60 @@
         width: 4.5em;
     }
 
+    #website_header{
+        height: 50px;
+    }
+
     #section_home {
         background-image: url("../images/cover_601.jpg");
         background-size: cover;
     }
 
     #pingslogo {
-        position: relative;
-        right: 30%;
+       
+       
     }
 
     #pingstitle {
-        right: -3.9%;
-        top: 95%;
+        right: 11%;
+        bottom: -110px;
+    }
+
+    #hometitle .title{
+        left: -10%;
     }
 
     #section-aboutme {
-        height: 1650px;
+        height: auto;
     }
 
     #section-aboutme .leftcontent {
         order: 2;
         width: 100%;
-        height: 49%;
+        height: auto;
     }
 
     #section-aboutme .rightcontent {
         order: -1;
         width: 100%;
-        height: 51%;
+        height: auto;
         overflow: hidden;
     }
 
     #section_curriculumVitae {
-        height: 3200px;
+        height: auto;
     }
 
     #section_curriculumVitae .leftcontent {
         width: 100%;
-        height: 30%;
+        height: auto;
     }
 
     #section_curriculumVitae .rightcontent {
         width: 100%;
-        height: 70%;
-        overflow: hidden;
+        height: auto;
+        overflow: auto;
+        margin-bottom: 25px;
     }
 
     .row .col-sm-5 {
@@ -376,13 +414,13 @@
     }
 
     #section_portfolio {
-        height: 1500px;
+        height: auto;
     }
 
     #section_portfolio .rightcontent {
-        order: 1;
+        order: -1;
         width: 100%;
-        height: 60%;
+        height: auto;
         overflow: auto;
     }
 
@@ -391,25 +429,25 @@
     }
 
     #section_portfolio .leftcontent {
-        order: -1;
+        order: 1;
         width: 100%;
-        height: 40%;
+        height: auto;
         overflow: auto;
     }
 
     #section_contact {
-        height: 1150px;
+        height: auto;
     }
 
     #section_contact .leftcontent {
         width: 100%;
-        height: 60%;
+        height: auto;
         overflow: hidden;
     }
 
     #section_contact .rightcontent {
         width: 100%;
-        height: 40%;
+        height: auto;
     }
 
     #website_footer {
@@ -456,8 +494,11 @@
     }
 
     #pingstitle {
-        right: 0%;
-        top: 85%;
+      right: 10%;
+    }
+
+    #hometitle .title {
+        left: -11%;
     }
 
    .main_content {
@@ -466,67 +507,69 @@
 
    #pingslogo {
        position: relative;
-       right: 35%;
+       right: 5%;
    }
 
    #section-aboutme {
-       height: 800px;
+       height: auto;
    }
 
    #section-aboutme .leftcontent {
        width: 43%;
-       height: 100%;
+       height: auto;
        margin-right: 20px;
    }
 
    #section-aboutme .rightcontent {
        width: 54%;
-       height: 100%;
+       height: auto;
    }
 
    #section_curriculumVitae {
-       height: 800px;
+       height: auto;
    }
 
    #section_curriculumVitae .leftcontent {
        width: 43%;
-       height: 100%;
+       height: auto;
    }
 
    #section_curriculumVitae .rightcontent {
        width: 54%;
-       height: 100%;
+       height: auto;
        margin-right: 20px;
    }
 
    #section_portfolio {
-       height: 1100px;
+       height: auto;
    }
 
    #section_portfolio .leftcontent {
        width: 43%;
-       height: 100%;
+       height: auto;
        margin-right: 20px;
+       order: 1;
    }
 
    #section_portfolio .rightcontent {
        width: 54%;
-       height: 100%;
+       height: auto;
+       order: -1;
    }
 
    #section_contact {
-       height: 800px;
+       height: auto;
    }
 
    #section_contact .leftcontent {
        width: 54%;
-       height: 100%;
+       height: auto;
        margin-right: 20px;
    }
 
    #section_contact .rightcontent {
        width: 43%;
-       height: 100%;
+       height: auto;
    }
 
     #website_footer {
@@ -569,6 +612,14 @@
 
     .main_content {
         margin-right: 1.5%;
+    }
+
+    #section_portfolio .leftcontent{
+        order: 1;
+    }
+
+    #section_portfolio .rightcontent{
+        order: -1;
     }
 
     #section_curriculumVitae .leftcontent {
