@@ -36,9 +36,9 @@
                     </li>
                 </ul>
                 <div id="dropdownitem" class="dropdown-container">
-                    <a href="#">Link1</a>
-                    <a href="#">Link2</a>
-                    <a href="#">Link3</a>
+                    <a href="test.html" target="_blank">Pixel Art Maker</a>
+                    <a href="fend-project-memory-game/index.html" target="_blank">Memory-Matching Game</a>
+                    <!-- <a href="#">Link3</a> -->
                 </div>
             </nav>
         </div>
@@ -74,6 +74,7 @@
                     </div>
                     <ul id="portfolio-filter" class="filters">
                         <li id="all" class="filter gridactive" onclick="filterSelection('all'),activchange(this.id)">ALL</li>
+                        <li id="jsGame" class="filter" onclick="filterSelection('jsGame'),activchange(this.id)">JsGame</li>
                         <li id="germany" class="filter" onclick="filterSelection('germany'),activchange(this.id)">Germany</li>
                         <li id="france" class="filter" onclick="filterSelection('france'),activchange(this.id)">France</li>
                         <li id="greek" class="filter" onclick="filterSelection('greek'),activchange(this.id)">Greek</li>
@@ -94,6 +95,32 @@
                             <figcaption>
                                 <div class="grid-title">Neuschwanstein Castle</div>
                             </figcaption>
+                        </li>
+                        <li class="foliocolumn jsGame show">
+                            <figure class="content">
+                                <a  href="test.html" target="_blank" class="grid-img entypo-eye" id="pixer">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/pixer.png" />
+                                        <source media="(min-width: 700px)" srcset="./images/pixer_700.png" />
+                                        <source media="(min-width: 320px)" srcset="./images/pixer_320.png" />
+                                        <img src="./images/pixer_240.png" alt="pixer art maker" /> 
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Pixer Art Maker</div></figcaption>
+                        </li>
+                        <li class="foliocolumn jsGame show">
+                            <figure class="content">
+                                <a  href="fend-project-memory-game/index.html" target="_blank" class="grid-img entypo-eye" id="matching">
+                                    <picture>
+                                        <source media="(min-width: 1025px)" srcset="./images/matching.png" />
+                                        <source media="(min-width: 700px)" srcset="./images/matching_700.png" />
+                                        <source media="(min-width: 320px)" srcset="./images/matching_320.png" />
+                                        <img src="./images/matching_240.png" alt="memory matching game" /> 
+                                    </picture>
+                                </a>
+                            </figure>
+                            <figcaption><div class="grid-title">Memory Matching Game</div></figcaption>
                         </li>
                         <li class="foliocolumn germany show">
                             <figure class="content">
