@@ -8,7 +8,7 @@
     <link href="css\MainStylesheet.css" rel="stylesheet" />
     <link href="css\bootstrap.min.css" rel="stylesheet" />
     <link href="css\Responsive.css" rel="stylesheet" />
-    <script src="js\PortfolioScript.js"></script>
+    <script src="js\PortfolioScript.js" async></script>
 </head>
 
 <body onload="showrightportfolio()">
@@ -47,6 +47,9 @@
                 <div id="logo">
                     <img id="pingslogo" src="images/pingslogo.svg" alt="Ping's Logo " />
                 </div>
+                <p>
+                    <span id="crpStatus"></span>
+                </p>
                 <h1 id="pingstitle">Ping's blog </h1>
             </header>
             <div class="border"></div>
@@ -467,6 +470,19 @@
             </div>
         </footer>
     </div>
+    <script>
+        function logCRP(){
+            let time = window.performance.timing,
+            dcl = time.domContentLoadedEventStart - time.domLoading,
+            complete = time.domComplete - time.domLoading;
+            let status = document.getElementById("crpStatus");
+            status.textContent = "DCL: "+dcl +"ms, onload: "+complete +"ms";
+
+        }
+        window.addEventListener("load",function(event){
+            logCRP();
+        })
+    </script>
 </body>
 
 </html>

@@ -24,7 +24,10 @@
     #website_header {
         left: -2.6%;
     }
-
+    #website_header p{
+        top: 12em;
+        left: 51%;
+    }
     #pingslogo {
         position: relative;
         left: 30%;
@@ -209,6 +212,9 @@
         left: 30%;
     }
 
+    #website_header p{
+        top: 12.5em;
+    }
     #hometitle .title {
         left: -1%;
     }
@@ -354,7 +360,10 @@
     #website_header {
         height: 50px;
     }
-
+    #website_header p{
+        top: 15em;
+        left: 55%;
+    }
     #section_home {
         background-image: url("../images/cover_601.jpg");
         background-size: cover;
