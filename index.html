@@ -8,6 +8,7 @@
     <link href="css\MainStylesheet.css" rel="stylesheet" />
     <link href="css\bootstrap.min.css" rel="stylesheet" />
     <link href="css\Responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="js\PortfolioScript.js" async></script>
 </head>
 
@@ -17,22 +18,24 @@
             <nav id="main_menu">
                 <ul>
                     <li>
-                        <a href="#" id="dropdownmenu" class="menu_item entypo-air" onclick="openmenu(this.id)" title="MENU"></a>
+                        <a href="#" id="dropdownmenu" class="menu_item fas fa-bars" onclick="openmenu(this.id)" title="MENU">
+                            <!-- <i class="fas fa-bars"></i> -->
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="menu_item entypo-home" title="HOME"></a>
+                        <a href="#" class="menu_item fas fa-home" title="HOME"></a>
                     </li>
                     <li>
-                        <a href="#section-aboutme" class="menu_item entypo-user" title="ABOUT ME"></a>
+                        <a href="#section-aboutme" class="menu_item fas fa-female" title="ABOUT ME"></a>
                     </li>
                     <li>
-                        <a href="#section_curriculumVitae" class="menu_item entypo-graduation-cap" title="CURRICULUM VITAE"></a>
+                        <a href="#section_curriculumVitae" class="menu_item fas fa-user-graduate" title="CURRICULUM VITAE"></a>
                     </li>
                     <li>
-                        <a href="#section_portfolio" class="menu_item entypo-suitcase" title="PORTFOLIO"></a>
+                        <a href="#section_portfolio" class="menu_item fas fa-briefcase" title="PORTFOLIO"></a>
                     </li>
                     <li>
-                        <a href="#section_contact" class="menu_item entypo-mail" title="CONTACT"></a>
+                        <a href="#section_contact" class="menu_item fas fa-envelope" title="CONTACT"></a>
                     </li>
                 </ul>
                 <div id="dropdownitem" class="dropdown-container">
@@ -85,7 +88,7 @@
                     <ul id="portfolio" class="grid">
                         <li class="foliocolumn germany show ">
                             <figure class="content ">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img entypo-eye" id="schloss">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img" id="schloss">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/schloss.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/schloss_700.jpg" />
@@ -101,7 +104,7 @@
                         </li>
                         <li class="foliocolumn jsGame show">
                             <figure class="content">
-                                <a  href="test.html" target="_blank" class="grid-img entypo-eye" id="pixer">
+                                <a  href="test.html" target="_blank" class="grid-img" id="pixer">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/pixer.png" />
                                         <source media="(min-width: 700px)" srcset="./images/pixer_700.png" />
@@ -114,7 +117,7 @@
                         </li>
                         <li class="foliocolumn jsGame show">
                             <figure class="content">
-                                <a  href="memoryGame.html" target="_blank" class="grid-img entypo-eye" id="matching">
+                                <a  href="memoryGame.html" target="_blank" class="grid-img" id="matching">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/matching.png" />
                                         <source media="(min-width: 700px)" srcset="./images/matching_700.png" />
@@ -127,7 +130,7 @@
                         </li>
                         <li class="foliocolumn germany show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="wilhelma">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img" id="wilhelma">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/IMG_8290.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/IMG_8290_700.jpg" />
@@ -143,7 +146,7 @@
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="eiffel">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img" id="eiffel">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/tower.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/tower_700.jpg" />
@@ -159,7 +162,7 @@
                         </li>
                         <li class="foliocolumn france show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="louvre">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img" id="louvre">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/paris.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/paris_700.jpg" />
@@ -175,7 +178,7 @@
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="santorini1">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img " id="santorini1">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/greek.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/greek_700.jpg" />
@@ -191,7 +194,7 @@
                         </li>
                         <li class="foliocolumn greek show">
                             <figure class="content">
-                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img  entypo-eye" id="santorini2">
+                                <a onclick="showpic(this.id)" href="#portfolioleft" class="grid-img" id="santorini2">
                                     <picture>
                                         <source media="(min-width: 1025px)" srcset="./images/santorini.jpg" />
                                         <source media="(min-width: 700px)" srcset="./images/santorini_700.jpg" />
@@ -236,40 +239,40 @@
                         <table class="infotable">
                             <tbody class="infotablebody">
                                 <tr>
-                                    <th class="entypo-language "></th>
+                                    <th class="fas fa-language"></th>
                                     <td class="rowheadname">Languages</td>
                                     <td class="rowcontent">Chinese,German,English</td>
                                 </tr>
                                 <tr>
-                                    <th class="entypo-palette"></th>
+                                    <th class="fas fa-palette"></th>
                                     <td class="rowheadname">Hobbies</td>
                                     <td class="rowcontent">Painting,photography,Programming,travel by walking,cooking... </td>
                                 </tr>
                                 <tr>
-                                    <th class="fontawesome-pushpin"></th>
+                                    <th class="fas fa-map-marker-alt"></th>
                                     <td class="rowheadname">Position</td>
                                     <td class="rowcontent">
                                         <a href="https://en.wikipedia.org/wiki/Esslingen_am_Neckar" target="_blank">Esslingen am Neckar,Germany</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="fontawesome-globe"></th>
+                                    <th class="fas fa-globe"></th>
                                     <td class="rowheadname">HomeTown</td>
                                     <td class="rowcontent">
                                         <a href="https://en.wikipedia.org/wiki/Guiyang" target="_blank">GuiYang,GuiZhou,China</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="entypo-flight"></th>
+                                    <th class="fas fa-road"></th>
                                     <td class="rowheadname">Visited Countries</td>
                                     <td class="rowcontent">9</td>
                                 </tr>
                                 <tr>
-                                    <th class="typicons-music"></th>
+                                    <th class="fas fa-headphones"></th>
                                     <td class="rowheadname">My Favorite Singer</td>
                                     <td class="rowcontent">
                                         <a href="https://en.wikipedia.org/wiki/Jay_Chou" target="_blank">Jay Chou</a>
-                                        <a class="zocial-youtube" href="https://www.youtube.com/watch?v=-7r6VqSllNg&list=RDEMiTjubl5ivyhGx9AXBRWj6A&index=25" target="_blank"></a>
+                                        <a class="fab fa-youtube" href="https://www.youtube.com/watch?v=-7r6VqSllNg&list=RDEMiTjubl5ivyhGx9AXBRWj6A&index=25" target="_blank"></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -290,7 +293,7 @@
                                 <div class="event">
                                     <h3 class="h3title">FURTHR EDUCATION</h3>
                                     <p>
-                                        <i class="entypo-book"></i>
+                                        <i class="fas fa-book"></i>
                                     </p>
                                 </div>
                                 <div class="event">
@@ -311,7 +314,7 @@
                                 <div class="event">
                                     <h3 class="h3title">EDUCATION</h3>
                                     <p>
-                                        <i class="fontawesome-book"></i>
+                                        <i class="fas fa-book-open"></i>
                                     </p>
                                 </div>
                                 <div class="event">
@@ -336,7 +339,7 @@
                             </div>
                             <div class="col-sm-5">
                                 <div id="skilltitle">
-                                    <h3 class="entypo-keyboard h3title h3titleright">CODING SKILLS</h3>
+                                    <h3 class="fas fa-code h3title h3titleright">CODING SKILLS</h3>
                                 </div>
                                 <div class="skills">
                                     <div class="skillbar" data-percent="70%">
@@ -458,13 +461,13 @@
             <div class="footer_social">
                 <ul class="social">
                     <li class="socialitem">
-                        <a class="fontawesome-github" href="#" title="github"></a>
+                        <a class="fab fa-github" href="https://github.com/PingSharp" target="blank" title="github"></a>
                     </li>
                     <li class="socialitem">
-                        <a class="entypo-sina-weibo" href="#" title="sina-weibo"></a>
+                        <a class="fab fa-weibo" href="#" title="sina-weibo"></a>
                     </li>
                     <li class="socialitem">
-                        <a class="entypo-qq" href="#" title="QQ"></a>
+                        <a class="fab fa-weixin" href="#" title="Wechat"></a>
                     </li>
                 </ul>
             </div>

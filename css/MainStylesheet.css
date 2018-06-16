@@ -1,29 +1,4 @@
-﻿@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|typicons|zocial);
-/*entypo*/
-
-[class*="entypo-"]:before {
-    font-family: 'entypo', sans-serif;
-}
-
-/* typicons */
-
-[class*="typicons-"]:before {
-    font-family: 'Typicons', sans-serif;
-}
-
-/* zocial */
-
-[class*="zocial-"]:before {
-    font-family: 'zocial', sans-serif;
-}
-
-/* fontawesome */
-
-[class*="fontawesome-"]:before {
-    font-family: 'FontAwesome', sans-serif;
-}
-
-*,
+﻿*,
 *:after,
 *::before {
     box-sizing: border-box;
@@ -565,11 +540,14 @@ h3 {
     padding: 0px;
     margin: 0px;
     border: none;
-    vertical-align: bottom;
     overflow: hidden;
     backface-visibility: hidden;
     max-height: 100%;
 }
+.grid>li>figure>a>picture>img:hover{
+    border: solid 2px blue;
+}
+
 
 .grid>li>figure {
     background-color: #f3f3f3;
@@ -684,18 +662,17 @@ h3 {
     height: 45px;
 }
 
-.social li .fontawesome-github:before {
-    color: cornflowerblue;
-    font-size: 2em;
-    padding-left: 5px;
-}
-
-.social li .entypo-sina-weibo:before {
+.social li .fa-github:before {
     color: cornflowerblue;
     font-size: 2em;
 }
 
-.social li .entypo-qq:before {
+.social li .fa-weibo:before {
+    color: cornflowerblue;
+    font-size: 2em;
+}
+
+.social li .fa-weixin:before {
     color: cornflowerblue;
     font-size: 2em;
 }
