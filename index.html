@@ -10,6 +10,8 @@
     <link href="css\Responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="js\PortfolioScript.js" async></script>
+    <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+    
 </head>
 
 <body onload="showrightportfolio()">
@@ -212,13 +214,9 @@
                 </div>
             </section>
             <section id="section-aboutme">
-                <div class="leftcontent">
-                    <picture>
-                        <source media="(min-width: 1025px)" srcset="./images/profie.JPG" />
-                        <source media="(min-width: 700px)" srcset="./images/profie_780.jpg" />
-                        <source media="(min-width: 320px)" srcset="./images/profie_500.jpg" />
-                        <img class="leftpic" src="./images/profie_240.jpg" />
-                    </picture>
+                <div class="leftcontent" id="feed">
+                   
+
                 </div>
                 <div class="rightcontent">
                     <article class="rightarticle">
@@ -486,6 +484,34 @@
             logCRP();
         })
     </script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+    var feed = new google.feeds.Feed("http://feeds.feedburner.com/mozilla/Uyar");
+    feed.load(function(result) {
+        if (!result.error) {
+        var container = document.getElementById("feed");
+        for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("div");
+            var link = document.createElement("a");
+            div.appendChild(link);
+            div.style.marginBottom = "15px";
+            div.style.borderBottom = "solid 1.5px blue";
+            div.style.fontSize = "1.5em";
+            link.appendChild(document.createTextNode(entry.title));
+            link.setAttribute("href",entry.link);
+            link.setAttribute("target","blank");
+            container.appendChild(div);
+        }
+        }
+    });
+    }
+    google.setOnLoadCallback(initialize);
+
+</script>
 </body>
 
 </html>
