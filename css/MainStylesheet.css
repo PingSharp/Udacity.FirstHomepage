@@ -99,6 +99,10 @@ h5 {
     background-color: mediumblue;
     border-radius: 5px;
 }
+ .showMenu{
+    display: block;
+    height: auto;
+}
 
 .dropdown-container a {
     color: white;

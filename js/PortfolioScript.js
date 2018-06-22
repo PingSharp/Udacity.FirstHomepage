@@ -63,15 +63,25 @@ function openmenu(id)
     var dropdown = document.getElementById(id);
     var dropdownitem = document.getElementById("dropdownitem");
     var i;
-    if (dropdownitem.style.display == "none") {
-        dropdownitem.style.display = "block";
-        dropdown.style.backgroundColor = "white";
-    }
-    else{
-        dropdownitem.style.display = "none";
+    // if (dropdownitem.style.display == "none") {
+    //     dropdownitem.style.display = "block";
+    //     dropdown.style.backgroundColor = "white";
+    // }
+    // else{
+    //     dropdownitem.style.display = "none";
+    //     dropdown.style.backgroundColor = "transparent";
+    // }
+   if(dropdownitem.classList.contains("showMenu"))
+   {
+        dropdownitem.classList.remove("showMenu");
         dropdown.style.backgroundColor = "transparent";
-    }
+   }
+   else{
+    dropdownitem.classList.toggle("showMenu");
+    dropdown.style.backgroundColor = "white";
 }
+   }
+    
 function showpic(id)
 {
     var portfolioleft = document.getElementById("portfolioleft");
