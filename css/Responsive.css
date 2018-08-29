@@ -18,7 +18,7 @@
     }
 
     #section_home {
-        background-image: url(images/cover_320.jpg);
+        background-image: url(../images/IMG_9567_320.jpg);
     }
 
     #website_header {
@@ -232,7 +232,7 @@
     }
 
     #section_home {
-        background-image: url(images/cover_480.jpg);
+        background-image: url(../images/IMG_9567_700.jpg);
         background-size: cover;
     }
 
@@ -367,7 +367,7 @@
         left: 55%;
     }
     #section_home {
-        background-image: url("images/cover_601.jpg");
+        background-image: url("../images/IMG_9567_700.jpg");
         background-size: cover;
     }
 
@@ -496,7 +496,7 @@
     }
 
     #section_home {
-        background-image: url("images/ping_1024.jpg");
+        background-image: url("../images/IMG_9567.JPG");
         background-size: cover;
     }
 
